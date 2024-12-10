@@ -1,6 +1,6 @@
 import email from "../../assets/icons/email-icon.svg" 
 import arrow from "../../assets/icons/light-arrow.svg"
-import twitter from "../../assets/icons/twitter-icon.svg"
+import linkdin from "../../assets/icons/linkedin.svg"
 import github from "../../assets/icons/github-2-icon.svg"
 import "./ContactMe.css"
 
@@ -16,18 +16,18 @@ function ContactMe() {
                         <img src={email} alt="email icon" />
                     </div>
 
-                    <a title="en56434@gmail.com" href="mailto:en56434@gmail.com" target="_blank" className="email-link">
+                    <a title="mayureshmayuresh56@gmail.com" href="mailto:mayureshmayuresh56@gmail.com" target="_blank" className="email-link">
                         Send me an email <img src={arrow} alt="arrow" />
                     </a>
                 </div>
 
                 <div className="twitter">
                     <div className="icon-container">
-                        <img src={twitter} alt="twitter icon" />
+                        <img src={linkdin} alt="linkdin" />
                     </div>
 
-                    <a href="https://www.twitter.com/dixx_david" target="_blank" className="twitter-link">
-                        Message me on Twitter <img src={arrow} alt="arrow icon" />
+                    <a href="http://www.linkedin.com/in/mayuresh-devadkar-874403224" target="_blank" className="twitter-link">
+                        Message me on Linkdin <img src={arrow} alt="arrow icon" />
                     </a>
                 </div>
 
@@ -36,14 +36,14 @@ function ContactMe() {
                         <img src={github} alt="github icon" />
                     </div>
 
-                    <a target="_blank" href="https://github.com/Daviddix" className="github-link">
+                    <a target="_blank" href="https://github.com/Mayuresh308" className="github-link">
                         Check out my Github<img src={arrow} alt="arrow icon" />
                     </a>
                 </div>
             </div>
 
             <p className="attr">
-                Designed and built by Emmanuel Nsikan-David
+                Designed by Mayuresh Devadkar
             </p>
         </div>
     </section>

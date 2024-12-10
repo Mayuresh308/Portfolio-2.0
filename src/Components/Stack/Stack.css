@@ -27,6 +27,11 @@
     row-gap: 4rem;
 }
 
+.stack-container > * {
+    flex: 0 0 calc((100% - 5 * 4rem) / 6); /* Adjust width for 6 items per row */
+    box-sizing: border-box; /* Ensures padding/borders are included in size */
+}
+
 @media screen and (min-width: 600px) {
     .stack-container{
         width: 100%;

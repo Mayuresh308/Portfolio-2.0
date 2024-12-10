@@ -1,8 +1,8 @@
-import logo from "../../assets/images/ND.png"
+import logo from "../../assets/images/MD.png"
 import x from "../../assets/icons/x-icon.svg"
 import hamburger from "../../assets/icons/hamburger-icon.svg"
 import pattern from "../../assets/images/background-pattern.png"
-import resume from "../../assets/resume.pdf"
+import resume from "../../assets/Mayuresh.pdf"
 import "./Hero.css"
 import { useEffect, useState,useRef } from "react"
 
@@ -76,7 +76,7 @@ function Hero() {
 
             <ul>
               <li>
-                <a onClick={()=>setNavIsOpened(false)} href="https://github.com/Daviddix" target="_blank">My Github</a>
+                <a onClick={()=>setNavIsOpened(false)} href="https://github.com/Mayuresh308" target="_blank">My Github</a>
                 </li>
                 </ul>
         </nav>
@@ -92,16 +92,15 @@ function Hero() {
          
 
        <p className="sub-heading">
-        Hey, i'm Nsikan-David. I am a
+        Hey, i'm Mayuresh Devadkar. I am a
        </p>
 
        <div className="hero-heading">
-        <h1>FRONTEND WEB DEVELOPER &</h1>
-        <h1>UI DESIGNER</h1>
+        <h1>WEB DEVELOPER </h1>
        </div>
 
        <p className="hero-intro">
-        Mainly building with ReactJS, I focus on turning ideas into functional and visually stunning realities. Lets collaborate and create something remarkable together!
+       A web developer and AI/ML enthusiast. I love creating responsive websites and exploring innovative AI solutions. My skills in web development and machine learning help me build impactful, user-friendly projects. I'm always excited to take on new challenges and grow in both fields.
        </p>
 
        <div className="hero-ctas">

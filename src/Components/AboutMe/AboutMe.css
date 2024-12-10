@@ -23,7 +23,7 @@
 }
 
 .about-me-container > img{
-    width:100%;
+    width:500px;
     margin: 2rem 0rem;
 }
 
@@ -34,6 +34,7 @@
     line-height: 1.4;
     margin: 0 0 2rem 0;
     color: var(--aboutMeTextColor);
+    text-align: justify;
 }
 
 .about-me-text-content button{

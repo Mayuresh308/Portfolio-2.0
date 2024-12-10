@@ -2,58 +2,56 @@ import { useState } from "react"
 import SingleProject from "../SingleProject/SingleProject"
 import "./Projects.css"
 
-// images 
-import remindrOne from "../../assets/images/remindr/15shots_so-min.jpg"
-import remindrTwo from "../../assets/images/remindr/120shots_so-min.jpg"
-import remindrThree from "../../assets/images/remindr/471shots_so-min.jpg"
+// RealEstate images 
+import RealEstateOne from "../../assets/images/RealEstate/1.png"
+import RealEstateTwo from "../../assets/images/RealEstate/2.png"
+import RealEstateThree from "../../assets/images/RealEstate/3.png"
+import RealEstateFour from "../../assets/images/RealEstate/4.png"
 
-//bulk downloader
-import bulkOne from "../../assets/images/bulk/168shots_so-min.jpg"
-import bulkTwo from "../../assets/images/bulk/621shots_so-min.jpg"
-import bulkThree from "../../assets/images/bulk/27shots_so-min.jpg"
+//socialMedia
+import socialMediaOne from "../../assets/images/socialMedia/5.png"
+import socialMediaTwo from "../../assets/images/socialMedia/6.png"
 
-//mathivities
-import mathOne from "../../assets/images/mathivities/154shots_so-min.jpg"
-import mathTwo from "../../assets/images/mathivities/441shots_so-min.jpg"
-import mathThree from "../../assets/images/mathivities/762shots_so-min.jpg"
+//CodeEditor
+import CodeEditorOne from "../../assets/images/CodeEditor/7.png"
+import CodeEditorTwo from "../../assets/images/CodeEditor/8.png"
+import CodeEditorThree from "../../assets/images/CodeEditor/9.png"
 
-//weather
-import weatherOne from "../../assets/images/weather/687shots_so-min.jpg"
-import weatherTwo from "../../assets/images/weather/570shots_so-min.jpg"
-import weatherThree from "../../assets/images/weather/56shots_so.png"
+//ResumeCraft
+import ResumeCraftOne from "../../assets/images/ResumeCraft/10.png"
+import ResumeCraftTwo from "../../assets/images/ResumeCraft/11.png"
 
 import arrow from "../../assets/icons/view-more-arrow.svg"
 
 
 function Projects() {
   const [projects, setProjects] = useState([{
-    name : "Remindr",
-    description : "Remindr is a web application made to help web users remember important information / tasks they keep forgetting due to their busy web activity. It uses push notifications to remind them based on the time interval they set.",
-    stack : ["ReactJS", "CSS", "Invision Studio"],
-    images: [remindrOne, remindrTwo, remindrThree ],
-    links : ["https://remindr-webapp.netlify.app/", "https://github.com/Daviddix/Remindr-webapp"]
+    name : "Real Estate Application",
+    description : "Developed a responsive real estate platform using the MERN stack, featuring user authentication, property management, and secure backend integration. The frontend, designed with React.js, includes property listings, search filters, and user dashboards, while the backend, built with Node.js and Express.js, ensures seamless functionality and security.",
+    stack : ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
+    images: [RealEstateOne,RealEstateTwo,RealEstateThree,RealEstateFour ],
+    links : ["https://mern-real-estate-s6wc.onrender.com/", "https://github.com/Mayuresh308/MERN-Real-Estate.git"]
   },
   {
-    name : "Bulk Image Downloader",
-    description : `Bulk Image Downloader is a web application that eases the burden of bulk image downloading by allowing you download "collection packs" which may contain 10, 50 or even 1000 images in just a few clicks`,
-    stack : ["ReactJS", "CSS", "Invision Studio"],
-    images: [bulkOne, bulkTwo, bulkThree ],
-    links : ["https://bulk-downloader.netlify.app/", "https://github.com/Daviddix/bulk-image-downloader"]
+    name : " Social Media Application",
+    description : `Social Media Application Created a dynamic social media platform using the MERN stack, allowing users to connect, share stories, and interact through likes and comments. The application features login/logout functionality, dark mode, media uploads, and user management. The frontend was built with React.js, the backend with Node.js, and MongoDB was used for data storage.`,
+    stack : ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
+    images: [socialMediaOne,socialMediaTwo ],
+    links : ["https://social-media-frontend-virid.vercel.app/", "https://github.com/Mayuresh308/social-media.git"]
   },
   {
-    name : "Mathivities",
-    description : `Mathivities is a delightful web-based game designed to enhance the math skills of children aged 7 to 10.
-    Through engaging and fun-filled mathematical challenges, young learners can effectively sharpen their abilities while enjoying the learning process.`,
-    stack : ["ReactJS", "CSS", "Invision Studio"],
-    images: [mathOne, mathTwo, mathThree ],
-    links : ["https://mathivities.netlify.app", "https://github.com/Daviddix/math-game"]
+    name : "CodeEditor",
+    description : `A lightweight code editor designed with React and Vite, offering a real-time, interactive coding experience. The editor incorporates Monaco Editor for robust code-editing capabilities and Chakra UI for a sleek, responsive design. Smooth animations powered by Framer Motion enhance the dynamic user interface, creating an engaging development tool.`,
+    stack : ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
+    images: [CodeEditorOne, CodeEditorTwo, CodeEditorThree ],
+    links : ["https://remarkable-hotteok-0981c4.netlify.app/", "https://github.com/Mayuresh308/React-Vite-CodeEditor.git"]
   },
   {
-    name : "Daily Weather",
-    description : "Not your average weather web app- it's packed with standard features like displaying the current temperature and weather details plus another cool feature, the ability of the background to adapt based on the current temperature or time",
-    stack : ["HTML", "CSS", "JavaScript", "Invision Studio"],
-    images: [weatherOne, weatherTwo, weatherThree ],
-    links : ["https://daily-weather-webapp.netlify.app/", "https://github.com/Daviddix/weather-app"]
+    name : "Resume Craft",
+    description : "A user-friendly platform for creating professional resumes with customizable templates. Features include dynamic editing, live previews, and the ability to download resumes seamlessly. Designed with separate frontend and backend architectures, it ensures smooth data management and an enhanced user experience.",
+    stack : ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
+    images: [ResumeCraftOne, ResumeCraftTwo],
+    links : ["https://resume-craft-frontend.vercel.app/", "https://github.com/Mayuresh308/Resume-Craft-Frontend.git"]
   }])
 
   const mappedProjects = projects.map(({name, description, stack, images, links})=>{
@@ -68,7 +66,7 @@ function Projects() {
             {mappedProjects}
             </div>
 
-            <a href="https://github.com/Daviddix?tab=repositories" target="_blank" >
+            <a href="https://github.com/Mayuresh308" target="_blank" >
               <button className="view-more">
               View more on Github 
               <img src={arrow} alt="" />
